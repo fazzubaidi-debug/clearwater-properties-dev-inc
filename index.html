@@ -1,0 +1,801 @@
+<html lang="en" class="scroll-smooth"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clearwater Properties | Local Living</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js" defer="defer"></script>
+<style>
+/* Custom Warm Theme */
+:root {
+    --bg-warm: #fdfcf8;
+    --text-primary: #44403c;
+    --text-secondary: #78716c;
+}
+body {
+    background-color: var(--bg-warm);
+    color: var(--text-primary);
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+    background: #d6d3d1;
+    border-radius: 5px;
+    border: 2px solid #f5f5f4;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e;
+}
+/* Animation */
+.fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Star Rating Interactive */
+.star-icon {
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+.star-icon:active {
+    transform: scale(0.9);
+}
+</style>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>
+    .font-serif { font-family: 'Merriweather', serif !important; }
+    .font-sans { font-family: 'Plus Jakarta Sans', sans-serif !important; }
+</style>
+
+
+<link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style><link id="all-fonts-link-font-cormorant" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-cormorant">.font-cormorant { font-family: 'Cormorant Garamond', serif !important; }</style></head>
+<body class="antialiased font-sans selection:bg-orange-100 selection:text-orange-900">
+
+    <!-- Invisible Definitions for Half Stars -->
+    <svg width="0" height="0" class="absolute">
+        <defs>
+            <linearGradient id="half-star-gradient">
+                <stop offset="50%" stop-color="#ca8a04"></stop>
+                <stop offset="50%" stop-color="#d6d3d1"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full bg-[#fdfcf8]/95 border-b border-stone-200/60 py-5 backdrop-blur-sm">
+      <div class="flex max-w-6xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+            <div class="p-1.5 bg-stone-100 rounded-lg group-hover:bg-stone-200 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="text-stone-600"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3 9l9-7l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" class=""></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 22V12h6v10"></path></svg>
+            </div>
+            <span class="text-lg font-bold text-stone-800 tracking-tight font-serif">Clearwater Properties &amp; Development Inc</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+          <a href="#listings" class="hover:text-stone-900 hover:underline decoration-stone-300 underline-offset-4 transition-all">Our Properties</a>
+          <a href="#amenities" class="hover:text-stone-900 hover:underline decoration-stone-300 underline-offset-4 transition-all">Amenities</a>
+          <a href="#reviews" class="hover:text-stone-900 hover:underline decoration-stone-300 underline-offset-4 transition-all">Reviews</a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <button class="md:hidden text-stone-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-[75vh] flex relative w-full items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <div class="bg-stone-900/40 absolute inset-0 mix-blend-multiply z-10"></div>
+        <div class="bg-gradient-to-t from-[#fdfcf8] via-transparent to-transparent absolute inset-0 z-20"></div>
+        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/adecf2ed-bb50-4471-b0a5-87ca4f09c21c_3840w.jpg" alt="Detroit Brick Architecture" class="w-full h-full object-cover">
+      </div>
+
+      <div class="z-30 w-full max-w-6xl px-6 pt-20">
+        <div class="flex flex-col max-w-2xl">
+          <div class="inline-flex self-start px-4 py-1.5 mb-6 bg-white/90 backdrop-blur-sm rounded-full border border-white/50 shadow-sm">
+            <span class="text-xs font-semibold text-stone-800 tracking-wide uppercase">Detroit &amp; Dearborn, MI</span>
+          </div>
+
+          <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white font-bold mb-6 drop-shadow-md">
+            A place to <br> call home.
+          </h1>
+
+          <p class="text-lg md:text-xl leading-relaxed text-stone-100 max-w-lg mb-10 font-medium drop-shadow-sm text-shadow">
+            We manage real apartments, houses, and local business spaces. Simple, honest renting with a focus on community and reliable service.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#listings" class="px-7 py-3.5 bg-[#fdfcf8] text-stone-900 rounded-xl font-semibold hover:bg-white hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                View Availability
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Listings Section -->
+    <section class="bg-[#fdfcf8] pt-24 pb-20" id="listings">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="">
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900 mb-3 font-bold">Available to Rent</h2>
+                <p class="text-stone-600 max-w-xl text-lg">Browse our current selection of living spaces and storefronts. Real photos, real prices.</p>
+            </div>
+            
+            <!-- Filters (Updated with All) -->
+            <div class="inline-flex bg-stone-100/80 p-1.5 rounded-xl gap-1">
+                <button class="filter-btn active px-4 py-2 text-sm font-semibold rounded-lg transition-all bg-white text-stone-900 shadow-sm" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 text-sm font-semibold rounded-lg text-stone-600 hover:bg-stone-200/50 hover:text-stone-900 transition-all" data-filter="apartment">Apartments</button>
+                <button class="filter-btn px-4 py-2 text-sm font-semibold rounded-lg text-stone-600 hover:bg-stone-200/50 hover:text-stone-900 transition-all" data-filter="house">Houses</button>
+                <button class="filter-btn transition-all text-sm font-semibold rounded-lg pt-2 pr-4 pb-2 pl-4 text-stone-600 hover:bg-stone-200/50 hover:text-stone-900" data-filter="commercial">Commercial</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8" id="listings-grid">
+            
+            <!-- Item 1: House -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="house">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/80140b29-dc8e-44c2-a233-a56fa8dad458_800w.webp" alt="Dearborn Bungalow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Single Family</span>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-grow pt-6 pr-6 pb-6 pl-6">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-bold text-stone-900 font-serif mb-1">24334 Penn St, Dearborn, MI 48124</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">2</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">House</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    
+                <div class="flex mt-auto items-center justify-between">
+                        <span class="text-lg font-bold text-stone-900">$1,437<span class="text-sm font-normal text-stone-500">/mo</span></span>
+                        <a href="https://www.zillow.com/homedetails/24334-Penn-St-Dearborn-MI-48124/160179278_zpid/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div></div>
+            </div>
+
+            <!-- Item 2: Apt -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/373e4f2b-4dd3-4ab3-9041-57de61e07227_800w.webp" alt="Vernor Hwy Apartment" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col flex-grow pt-6 pr-6 pb-6 pl-6">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7832 W Vernor Hwy, Apt 6, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Apt</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        
+                        <a href="https://www.zillow.com/homedetails/7832-W-Vernor-Hwy-6-Detroit-MI-48209/2060133208_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Apt Interior -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bf063340-84c3-462e-beb1-98e44e9028df_800w.webp" alt="Apartment Interior" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                     <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                </div>
+                 <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7832 W Vernor Hwy, Apt 5, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 border-stone-100 border-t border-b mb-5 pt-4 pb-4 gap-x-2 gap-y-2">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Apt</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        
+                        <a href="https://www.zillow.com/homedetails/7832-W-Vernor-Hwy-5-Detroit-MI-48209/2077659338_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Apt 4 -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/cf695fc4-59e7-4a52-9538-aca6548754f3_800w.webp" alt="Michigan Ave Loft" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover bg-center">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                </div>
+                 <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7832 W Vernor Hwy, Apt 4, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">0</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Loft</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        
+                        <a href="https://www.zillow.com/homedetails/7832-W-Vernor-Hwy-4-Detroit-MI-48209/2080771576_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Apt 5 -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e2b06d2-8cef-4c0c-a58c-afefa39d8bdf_800w.webp" alt="Hubbard Farms Unit" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                </div>
+                 <div class="flex flex-col flex-grow pt-6 pr-6 pb-6 pl-6">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7832 W Vernor Hwy, Apt 3, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 border-stone-100 border-t border-b mb-5 pt-4 pb-4 gap-x-2 gap-y-2">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Apt</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        
+                        <a href="https://www.zillow.com/homedetails/7832-W-Vernor-Hwy-3-Detroit-MI-48209/2080771573_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Apt 6 -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c41ab4e1-80c4-4f56-a617-9aebf3ed8a24_800w.webp" alt="Porter St Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                </div>
+                 <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7836 W Vernor Hwy, Apt 2, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Studio</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        <span class="text-lg font-bold text-stone-900">$850<span class="text-sm font-normal text-stone-500">/mo</span></span>
+                        <a href="https://www.zillow.com/homedetails/7836-W-Vernor-Hwy-2-Detroit-MI-48209/2058226435_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Commercial -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="commercial">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/8e83c6dd-2274-4d79-8907-daaff7951506_800w.jpg" alt="Commercial Storefront" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-stone-900/90 backdrop-blur text-white text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Commercial</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7900 W Vernor Hwy, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">Flex</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Sq Ft</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Retail</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Zoning</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        <span class="text-lg font-bold text-stone-900">$1,265<span class="text-sm font-normal text-stone-500">/mo</span></span>
+                        <a href="https://www.zillow.com/homedetails/7900-W-Vernor-Hwy-Detroit-MI-48209/2125385000_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Commercial 2 -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="commercial">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/bc25554e-d56c-4a8a-908f-6e190a103b85_800w.jpg" alt="Commercial Storefront" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-stone-900/90 backdrop-blur text-white text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Commercial</span>
+                    </div>
+                </div>
+                 <div class="flex flex-col flex-grow pt-6 pr-6 pb-6 pl-6">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7830 W Vernor Hwy, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">8,792</span>
+                            <span class="uppercase text-xs text-stone-500 tracking-wide">SQ FT</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Retail</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Zoning</span>
+                        </div>
+                    </div>
+                    <div class="flex mt-auto items-center justify-between">
+                        
+                        <a href="https://www.loopnet.com/Listing/7830-W-Vernor-Hwy-Detroit-MI/9623084/" target="_blank" rel="noopener noreferrer" class="underline decoration-stone-300 hover:text-stone-600 text-sm font-semibold">Inquire</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Commercial 3 -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="commercial">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/65841696-5a89-4748-8840-dd9517849c92_800w.jpg" alt="Office Flex Space" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-stone-900/90 backdrop-blur text-white text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Commercial</span>
+                    </div>
+                </div>
+                 <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7842 W Vernor Hwy, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 border-stone-100 border-t border-b mb-5 pt-4 pb-4 gap-x-2 gap-y-2">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">6220</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Sq Ft</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Office</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Zoning</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        <span class="text-lg font-bold text-stone-900">$1,393<span class="text-sm font-normal text-stone-500">/mo</span></span>
+                        <a href="https://www.movoto.com/detroit-mi/7842-w-vernor-hwy-detroit-mi-48209/pid_mz9aghsqutab/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Apt -->
+            <div class="listing-item group flex flex-col bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:shadow-stone-200/50 transition-all duration-300 overflow-hidden" data-category="apartment">
+                <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d77e31a1-0846-403c-9528-32c7100983c0_800w.webp" alt="Vernor Hwy Apartment" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+                    <div class="absolute top-4 left-4">
+                        <span class="px-3 py-1 bg-white/95 backdrop-blur text-stone-900 text-xs font-bold rounded-md shadow-sm uppercase tracking-wide">Apartment</span>
+                    </div>
+                </div>
+                 <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-stone-900 font-serif mb-1">7836 W Vernor Hwy, Apt 1, Detroit, MI 48209</h3>
+                        
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 py-4 border-t border-b border-stone-100 mb-5">
+                        <div class="text-center">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bed</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">1</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Bath</span>
+                        </div>
+                        <div class="text-center border-l border-stone-100">
+                            <span class="block font-bold text-stone-800">Apt</span>
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Type</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex items-center justify-between">
+                        
+                        <a href="https://www.zillow.com/homedetails/7836-W-Vernor-Hwy-1-Detroit-MI-48209/2076349132_zpid/?utm_campaign=zillowwebmessage&utm_medium=referral&utm_source=txtshare" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold underline decoration-stone-300 hover:text-stone-600">Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="bg-stone-100/50 border-stone-200 border-t pt-20 pb-20" id="amenities">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3 sticky top-24">
+                    <span class="text-xs font-bold tracking-wider text-stone-500 uppercase mb-3 block">Neighborhood</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-stone-900 font-bold mb-6">Why live here?</h2>
+                    <p class="text-lg text-stone-600 leading-relaxed mb-6">
+                        We don't just rent units; we maintain homes in vibrant neighborhoods. Our properties are chosen for their walkability, character, and access to the best of Detroit and Dearborn.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-center gap-3 text-stone-700">
+                             
+                             
+                        </div>
+                        <div class="flex items-center gap-3 text-stone-700">
+                             
+                             
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- Outdoor Spaces -->
+                    <div class="bg-white p-5 rounded-xl border border-stone-100 shadow-sm flex items-start gap-4">
+                        <div class="p-2.5 bg-orange-50 text-orange-800 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class=""><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h18v18H3zM8 12h8m-8 4h8m-8-8h8"></path></svg>
+                        </div>
+                        <div class="">
+                            <h4 class="font-bold text-stone-900 mb-1">Outdoor Spaces</h4>
+                            <p class="text-sm text-stone-500">Picnic seating, BBQ areas, patios, plus outdoor gym and walking space.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-xl border border-stone-100 shadow-sm flex items-start gap-4">
+                         <div class="p-2.5 bg-blue-50 text-blue-800 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.5 17h13a2.5 2.5 0 0 0 2.5-2.5V12a2.5 2.5 0 0 0-2.5-2.5H16"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 9.5L10.2 4.6a2 2 0 0 0-3.5 0L4 9.5"></path><circle cx="6.5" cy="17.5" r="2.5"></circle><circle cx="16.5" cy="17.5" r="2.5"></circle></svg>
+                        </div>
+                        <div class="">
+                            <h4 class="font-bold text-stone-900 mb-1">Bike Storage</h4>
+                            <p class="text-sm text-stone-500">Secure spots to keep your bike safe and accessible.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-stone-100 shadow-sm flex items-start gap-4">
+                         <div class="p-2.5 bg-green-50 text-green-800 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" data-lucide="wrench" data-icon-set="lucide" data-icon-replaced="true" style="color: rgb(22, 101, 52);"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <div class="">
+                            <h4 class="font-bold text-stone-900 mb-1" style="">Quick Maintenance</h4>
+                            <p class="text-sm text-stone-500">Fast, dependable maintenance when you need it.</p>
+                        </div>
+                    </div>
+
+                    <!-- Laundry -->
+                    <div class="bg-white p-5 rounded-xl border border-stone-100 shadow-sm flex items-start gap-4">
+                        <div class="p-2.5 bg-stone-100 text-stone-400 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h3"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 6h.01"></path><rect width="18" height="20" x="3" y="2" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect><circle cx="12" cy="13" r="5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle></svg>
+                        </div>
+                        <div class="">
+                            <h4 class="font-bold text-stone-900 mb-1">Laundry – Coming Soon</h4>
+                            <p class="text-sm text-stone-500">Not currently available. Installations planned for future dates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-[#fdfcf8] pt-24 pb-24" id="reviews">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-900 mb-4">Tenant Feedback</h2>
+                <p class="text-stone-600 text-lg">We value our community. See what our neighbors have to say.</p>
+            </div>
+
+            <!-- Write Review Form -->
+            <div class="bg-white rounded-2xl border border-stone-200 p-6 md:p-8 shadow-sm mb-12">
+                <h3 class="font-serif text-xl font-bold text-stone-900 mb-1">Share Your Experience</h3>
+                <p class="text-sm text-stone-500 mb-6">How was your stay with us? Your feedback helps us grow.</p>
+                
+                <form id="review-form" class="space-y-5">
+                    <!-- Star Rating Input -->
+                    <div class="">
+                        <label class="block text-sm font-semibold text-stone-700 mb-2">Rating</label>
+                        <div class="flex gap-2 cursor-pointer w-fit" id="star-rating-control">
+                             <!-- Stars injected via JS or static SVG structure below -->
+                             <svg class="star-icon text-stone-300" data-index="1" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"></path></svg>
+                             <svg class="star-icon text-stone-300" data-index="2" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"></path></svg>
+                             <svg class="star-icon text-stone-300" data-index="3" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"></path></svg>
+                             <svg class="star-icon text-stone-300" data-index="4" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"></path></svg>
+                             <svg class="star-icon text-stone-300" data-index="5" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"></path></svg>
+                        </div>
+                        <input type="hidden" id="rating-value" name="rating" required="">
+                        <p id="rating-error" class="text-red-500 text-xs mt-1 hidden">Please select a star rating.</p>
+                    </div>
+
+                    <!-- Name Input (New) -->
+                    <div class="">
+                         <label for="reviewer-name" class="block text-sm font-semibold text-stone-700 mb-2">First and Last Name</label>
+                         <input type="text" id="reviewer-name" name="name" required="" class="w-full rounded-xl border-stone-200 bg-stone-50 focus:bg-white focus:ring-2 focus:ring-stone-200 focus:border-stone-400 text-stone-800 placeholder:text-stone-400 p-3 transition-all" placeholder="Jane Doe">
+                    </div>
+
+                    <!-- Text Input -->
+                    <div class="">
+                        <label for="review-text" class="block text-sm font-semibold text-stone-700 mb-2">Written Review</label>
+                        <textarea id="review-text" name="review" rows="3" required="" class="w-full rounded-xl border-stone-200 bg-stone-50 focus:bg-white focus:ring-2 focus:ring-stone-200 focus:border-stone-400 text-stone-800 placeholder:text-stone-400 p-3 transition-all" placeholder="Tell us about your home, the neighborhood, or the management..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-stone-800 text-stone-50 font-semibold rounded-xl hover:bg-stone-700 transition-colors shadow-sm">
+                        Post Review
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Reviews Display: Empty as requested -->
+            <div id="reviews-list" class="space-y-6">
+                <!-- No reviews here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-white pt-20 pb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-stone-900 font-serif text-center mb-10" style="">Life in Dearborn &amp; Detroit</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[500px]">
+                <div class="col-span-2 row-span-2 relative rounded-2xl overflow-hidden group shadow-md">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b7dbf49d-6f36-4136-a5c6-16838cab2696_1600w.webp" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover" alt="Dearborn Residence">
+                </div>
+                <div class="col-span-1 row-span-1 relative rounded-2xl overflow-hidden group shadow-md">
+                     <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c41ab4e1-80c4-4f56-a617-9aebf3ed8a24_800w.webp" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover" alt="Vernor Hwy Exterior">
+                </div>
+                <div class="col-span-1 row-span-1 relative rounded-2xl overflow-hidden group shadow-md">
+                     <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/391361a3-385d-4b49-9ec0-32e51ba13f47_800w.webp" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover bg-center" alt="Commercial Space">
+                </div>
+                <div class="col-span-2 row-span-1 relative rounded-2xl overflow-hidden group shadow-md">
+                     <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/cf695fc4-59e7-4a52-9538-aca6548754f3_1600w.webp" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover" alt="Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 border-stone-200 border-t mt-12 pt-12 pb-12" id="contact">
+      <div class="flex flex-col md:flex-row gap-10 max-w-6xl mr-auto ml-auto pr-6 pl-6 gap-x-10 gap-y-10 items-start justify-between">
+        <div class="">
+            <span class="block text-lg font-bold text-stone-900 font-serif mb-4">Clearwater Properties &amp; Development Inc</span>
+            <p class="text-sm text-stone-500 max-w-xs mb-4">
+                Providing honest, comfortable rentals in Detroit and Dearborn. We believe in being good neighbors.
+            </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Portfolio Filters
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const listingItems = document.querySelectorAll('.listing-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.getAttribute('data-filter');
+
+                    // Update button styles
+                    filterButtons.forEach(btn => {
+                        if (btn === button) {
+                            btn.classList.add('bg-white', 'text-stone-900', 'shadow-sm');
+                            btn.classList.remove('text-stone-600', 'hover:bg-stone-200/50', 'hover:text-stone-900');
+                        } else {
+                            btn.classList.remove('bg-white', 'text-stone-900', 'shadow-sm');
+                            btn.classList.add('text-stone-600', 'hover:bg-stone-200/50', 'hover:text-stone-900');
+                        }
+                    });
+
+                    // Filter items
+                    listingItems.forEach(item => {
+                        // Check if filter is 'all' or matches category
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.classList.remove('hidden');
+                            item.classList.add('flex', 'fade-in');
+                        } else {
+                            item.classList.add('hidden');
+                            item.classList.remove('flex', 'fade-in');
+                        }
+                    });
+                });
+            });
+
+            // Enhanced Review System Logic (Half Stars & Name)
+            const starContainer = document.getElementById('star-rating-control');
+            const stars = starContainer.querySelectorAll('.star-icon');
+            const ratingInput = document.getElementById('rating-value');
+            const reviewForm = document.getElementById('review-form');
+            const reviewsList = document.getElementById('reviews-list');
+            const ratingError = document.getElementById('rating-error');
+            
+            let currentRating = 0;
+            let hoverRating = 0;
+
+            // Helper to update visual state of stars based on value
+            function updateStars(value) {
+                stars.forEach((star, index) => {
+                    const starVal = index + 1;
+                    if (value >= starVal) {
+                        // Full Star
+                        star.setAttribute('fill', '#ca8a04'); // yellow-600
+                        star.classList.remove('text-stone-300');
+                    } else if (value >= starVal - 0.5) {
+                        // Half Star
+                        star.setAttribute('fill', 'url(#half-star-gradient)');
+                        star.classList.remove('text-stone-300');
+                    } else {
+                        // Empty Star
+                        star.setAttribute('fill', 'currentColor');
+                        star.classList.add('text-stone-300');
+                    }
+                });
+            }
+
+            // Mouse Move (Hover) Handler for Half Stars
+            starContainer.addEventListener('mousemove', (e) => {
+                // Find which star is being hovered
+                const targetStar = e.target.closest('.star-icon');
+                if (!targetStar) return;
+
+                const rect = targetStar.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const width = rect.width;
+                const starIndex = parseInt(targetStar.getAttribute('data-index'));
+
+                // If mouse is on left half (0-50%), subtract 0.5 from index
+                if (x < width / 2) {
+                    hoverRating = starIndex - 0.5;
+                } else {
+                    hoverRating = starIndex;
+                }
+                
+                updateStars(hoverRating);
+            });
+
+            // Mouse Leave Handler
+            starContainer.addEventListener('mouseleave', () => {
+                updateStars(currentRating);
+                hoverRating = 0;
+            });
+
+            // Click Handler
+            starContainer.addEventListener('click', () => {
+                if (hoverRating > 0) {
+                    currentRating = hoverRating;
+                    ratingInput.value = currentRating;
+                    ratingError.classList.add('hidden');
+                    // Force update to lock in the color
+                    updateStars(currentRating);
+                }
+            });
+
+            // Form Submit Handler
+            reviewForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                if (!currentRating) {
+                    ratingError.classList.remove('hidden');
+                    return;
+                }
+
+                const name = document.getElementById('reviewer-name').value;
+                const text = document.getElementById('review-text').value;
+                
+                // Create new review HTML
+                const newReview = document.createElement('div');
+                newReview.className = 'bg-white p-6 rounded-2xl border border-stone-100 shadow-sm flex flex-col gap-4 fade-in';
+                
+                let starsHtml = '';
+                // Generate SVG stars for the display based on float value
+                for (let i = 1; i <= 5; i++) {
+                    if (currentRating >= i) {
+                        // Full star
+                        starsHtml += `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#ca8a04"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"/></svg>`;
+                    } else if (currentRating >= i - 0.5) {
+                        // Half star (reusing gradient def from body)
+                        starsHtml += `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="url(#half-star-gradient)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"/></svg>`;
+                    } else {
+                        // Empty star
+                         starsHtml += `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="text-stone-300" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"/></svg>`;
+                    }
+                }
+
+                newReview.innerHTML = `
+                    <div class="flex items-center justify-between">
+                         <div class="flex gap-1">
+                             ${starsHtml}
+                         </div>
+                         <span class="text-xs text-stone-400">Just now</span>
+                    </div>
+                    <p class="text-stone-700 leading-relaxed">
+                        "${text}"
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-stone-100 pt-4">
+                        <div class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center text-xs font-bold text-stone-600">${name.charAt(0).toUpperCase()}</div>
+                        <span class="text-sm font-semibold text-stone-900">${name}</span>
+                    </div>
+                `;
+                
+                reviewsList.prepend(newReview);
+                
+                // Reset form
+                reviewForm.reset();
+                currentRating = 0;
+                hoverRating = 0;
+                updateStars(0);
+            });
+        });
+    </script>
+
+</body></html>
