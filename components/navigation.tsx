@@ -24,11 +24,12 @@ export default function Navigation() {
       <div className="flex max-w-6xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
         <Link href="#" className="flex items-center gap-3 group">
           <Image
-            src="/pics/logo.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo.png-QqbQlipRM0hudNPoLcPiYEHS6L7G7w.jpeg"
             alt="Clearwater Properties and Development Inc Logo"
             width={128}
             height={128}
             className="nav-logo object-contain"
+            unoptimized
           />
           <span className="text-lg font-bold text-stone-800 tracking-tight font-serif">
             Clearwater Properties and Development Inc

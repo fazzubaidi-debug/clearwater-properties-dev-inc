@@ -9,11 +9,12 @@ export default function Footer() {
       <div className="max-w-6xl mr-auto ml-auto pr-6 pl-6">
         <div className="flex justify-center">
           <Image
-            src="/pics/logo.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo.png-QqbQlipRM0hudNPoLcPiYEHS6L7G7w.jpeg"
             alt="Clearwater Properties and Development Inc Logo"
             width={224}
             height={224}
             className="h-48 w-48 md:h-56 md:w-56 object-contain"
+            unoptimized
           />
         </div>
       </div>
